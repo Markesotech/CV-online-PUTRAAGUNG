@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Pertamaku</title>
+    <title>Putra Agung Hernanto — Civil Engineer & Web Developer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fontes.gstatic.com" crossorigin>
-    <link rel="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,62 +17,76 @@
 
     <div class="container-navbar">
         <ul class="ul-navbar">
-            <li class="li-navbar">Beranda</li>
-            <li class="li-navbar">Tentang</li>
-            <li class="li-navbar">Kontak</li>
+            <li class="li-navbar"><a href="#beranda">Beranda</a></li>
+            <li class="li-navbar"><a href="#tentang">Tentang</a></li>
+            <li class="li-navbar"><a href="#kontak">Kontak</a></li>
         </ul>
         </div>
     
-    <div class="container-hero">
-        <h1 class="hero-judul">Halo, Saya Markeso</h1>
-        <p class="hero-subjudul">Seorang Web Developer yang sedang berkembang</p>
-        <button class="hero-tombol">Lihat Portofolio Saya</button>
+    <div class="container-hero" id="beranda">
+        <h1 class="hero-judul">Halo, Saya Putra Agung Hernanto</h1>
+        <p class="hero-subjudul">  Civil Engineer → Web Developer | Terbuka untuk Peluang Remote</p>
+        <button class="hero-tombol" id="tombol-portfolio">Lihat Keahlian Saya</button>
     </div>
 
-    <div class="container-tentang">
+    <div class="container-tentang animate-on-scroll" id="tentang">
         <h2 class="judul-section">Tentang Saya</h2>
         <p class="teks-tentang">
-            Saya adalah lulusan D4 Teknik Sipil dengan pengalaman sebagai Drafter, 
-            Estimator, dan Site Supervisor. Saat ini saya sedang membangun kemampuan 
-            di bidang Web Development untuk membuka peluang kerja remote. 
+        Saya Putra Agung Hernanto, lulusan D4 Teknik Sipil Universitas Negeri 
+        Surabaya (2024) dengan pengalaman sebagai Drafter, Estimator 
+        RAB, dan Site Supervisor di bidang konstruksi. Saat ini saya aktif 
+        membangun kemampuan Web Development untuk membuka peluang karir remote, 
+        sambil mengembangkan project digital di bidang konten dan teknologi.
         </p>
     </div>
 
-    <div class="container-skill">
+    <div class="container-skill animate-on-scroll">
         <h2 class="judul-section">Keahlian Saya</h2>
         <div class="grid-skill">
-            <div class="kartu-skill">
+            <div class="kartu-skill animate-on-scroll">
                 <h3>CAD Drafting</h3>
-                <p>Membuat gambar teknik konstruksi</p>
+                <p>Gambar teknik konstruksi & shop drawing</p>
         </div>
 
-    <div class="kartu-skill">
+    <div class="kartu-skill animate-on-scroll">
         <h3>Estimasi Biaya (RAB)</h3>
-        <p>Menghitung kebutuhan & biaya proyek</p>
+        <p>Perhitungan volume & anggaran biaya proyek konstruksi</p>
     </div>
 
-    <div class="kartu-skill">
-        <h3>Video Editing</h3>
-        <p>Produksi konten shorts & video pendek</p>
+    <div class="kartu-skill animate-on-scroll">
+        <h3>Web Development</h3>
+        <p>HTML, CSS, JavaScript — membangun website dari nol</p>
         </div>
+    
+    <div class="kartu-skill animate-on-scroll">
+            <h3>Video Editing</h3>
+            <p>Produksi konten Shorts & video untuk YouTube</p>
+        </div>
+
+    <div class="kartu-skill animate-on-scroll">
+            <h3>Site Supervision</h3>
+            <p>Pengawasan lapangan & koordinasi proyek konstruksi</p>
+        </div> 
+        
     </div>
 </div>
 
-<div class="container-kontak">
+<div class="container-kontak animate-on-scroll" id="kontak">
     <h2 class="judul-section">Hubungi Saya</h2>
-    <p class="teks-tentang">Tertarik bekerja sama? Isi form di bawah ini</p>
+    <p class="teks-tentang">Tertarik bekerja sama atau punya peluang remote? 
+        Kirim pesan dan saya akan merespons secepatnya.</p>
     
     <form class="form-kontak">
         <input type="text" id="input-nama" placeholder="Nama Kamu">
-        <input type="text" id="input-email" placeholder="Email Kamu">
-        <textarea id="input-pesan" placeholder="Tulis pesan kamu di sini"></textarea>
+        <input type="email" id="input-email" placeholder="Email Kamu">
+        <textarea id="input-pesan" placeholder="Ceritakan project atau peluang yang ingin didiskusikan..."></textarea>
         <button type="button" class="hero-tombol" id="tombol-kirim">Kirim Pesan</button>
         <p id="pesan-status"></p>
     </form>
 </div>
 
 <footer class="footer">
-    <p>@2026 Markeso. Semua hak cipta dilindungi</p>
+    <p>@2026 Putra Agung Hernanto. Dibangun dengan HTML, CSS & JavaScript.</p>
 </footer>
     <script src="script.js"></script>
 </body>
